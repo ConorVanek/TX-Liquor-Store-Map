@@ -1,30 +1,8 @@
-***************************************************************************************
-***************************************************************************************
-*  THIS MAP IS DISPLAYED IN A WEB BROWSER USING A LOCAL HTTP SERVER THROUGH PYTHON.   *
-*  IF PYTHON IS NOT INSTALLED AND IN YOUR %PATH% DIRECTORY LIST FOR COMMAND PROMPT,   *
-*                          THESE INSTRUCTIONS WON'T WORK.                             *
-***************************************************************************************
-***************************************************************************************
+## TX Liquor Store Map
 
+This is an interactive map of every liquor store in Texas alongside population density. Liquor store data comes from TABC website and population data comes from 2016 US Census API. The data is a bit dated and this is mostly for show.
 
--I'm interested in any suggestions that might improve this tool!
-Email me at cvanek@goodygoody.com
-
--Currently these instructions only work on Windows computers.
-
--HOW TO OPEN THE MAP (THE EASY WAY):
-1) Unzip this folder and put it anywhere in your C:/ drive.
-2) Double-Click GoodyMap.bat... That's it! (Must have Google Chrome installed)
-(Note: Don't close out the command window that opens up. This window is running the http server used to
-access the javascript libraries necessary to render the map!)
-
--TO MANUALLY START A WEB SERVER WITH PYTHON AND OPEN THE MAP (THE LESS EASY WAY):
-1) Unzip this folder and put it anywhere in your C:/ drive.
-2) Open Command Prompt.
-3) Navigate to the root directory (that's the folder that this README file is in.)
-4) Type "python -m http.server" and press ENTER (Must have python installed and listed in your %PATH% variables.)
-5) Open a web browser and navigate to http://localhost:8000 (Chrome works best.)
-6) The map should load. 
+To use, Simply place all the files in a root directory, run a http server from the directory, and navigate to the localhost in a browser (works best in Chrome).
 
 
 -MAP FEATURES:
@@ -36,10 +14,7 @@ access the javascript libraries necessary to render the map!)
 -Double-Click on a spot to place a pin. Click 'Ok' on the following prompt to open that spot in google.
 -Population density is color-coded. from least to most populated: (light green -> green -> dark green -> light purple -> dark purple -> pink -> red)
 
-Special thanks to: Leaflet API, US Census API, Texas A&M Geocoding Services, Jupyter Notebook, TABC Inquiry, and
-all the countless online contributors and discussions in the open-source community which made this possible.
-I hope you find it useful.
--Conor
+Special thanks to: Leaflet API, US Census API, Texas A&M Geocoding Services, Jupyter Notebook, TABC Inquiry
 
 ========================================================================================================================================
 
